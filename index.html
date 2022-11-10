@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Store</title>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/index.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            penrose
+        </div>
+
+        <div class="nav">
+              <span class="nav-items">
+                  <a href="">HOME</a>
+                  <a href="">NEW COLLECTIONS</a>
+                  <span class="select">
+                    <button class="store" onclick="openStore()">
+                        STORE
+                        <img src="./assets/arrow_down.svg" alt="" id="arrowDown">
+                    </button>
+                    <span class="category">
+                        <a href="#">Men</a>
+                        <a href="#">Women</a>
+                        <a href="#">Kids</a>
+                    </span>
+                </span>
+                  <a href="">CONTACTS</a>
+             </span>
+        </div>
+        <img src="./assets/menu.png" alt="Burger" class="burger" onclick="openAside()">
+    </header>
+
+    <section class="section container">
+            <div class="section-title">
+                <img src="./assets/Title.svg" alt="">
+                <div class="video">
+                    <span class="play-button" onclick="window.open('https://www.youtube.com/watch?v=1LZ1nXbjcFY','_blank')">
+                        <img src="./assets/play.svg" alt=""> 
+                    </span>
+                </div>
+             </div>
+
+             <div class="section-quote"></div>
+            
+    </section>
+
+    <aside id="aside" class="aside">
+        <div class="aside-backdrop" onclick="closeAside()"></div>
+        <div class="aside-inner">
+            <div class="aside-item close">
+                <span onclick="closeAside()">
+                    <i>&#x2715;</i>
+                    Close
+                </span>
+            </div>
+
+            <div class="aside-item">
+                HOME
+            </div>
+
+            <div class="aside-item">
+             NEW COLLECTIONS
+            </div>
+
+            <div class="aside-item">
+                STORE
+            </div>
+
+            <div class="aside-item">
+               CONTACTS
+            </div>
+
+
+        </div>
+
+            
+    </aside>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="./slider.js"></script>
+</body>
+</html>
